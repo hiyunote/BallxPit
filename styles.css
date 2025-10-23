@@ -3,20 +3,31 @@ body {
     margin: 20px;
     background-color: #f0f0f0;
 }
-table {
-    width: 80%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
+
+h1 {
+    color: #333;
     text-align: center;
 }
-th {
-    background-color: #4a90e2;
-    color: white;
+
+h2 {
+    color: #4a90e2;
+    border-bottom: 2px solid #ccc;
+    margin-top: 20px;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .synthesized {
     background-color: #90ee90; /* 綠色表示已合成 */
 }
