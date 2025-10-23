@@ -1,0 +1,16 @@
+const games = [
+    { name: "The Legend of Zelda", year: 1986, rating: 9.5 },
+    { name: "Super Mario Bros", year: 1985, rating: 9.0 },
+    { name: "Minecraft", year: 2011, rating: 9.2 }
+];
+
+const tableBody = document.querySelector('#gameTable tbody');
+games.forEach(game => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td>${game.name}</td>
+        <td>${game.year}</td>
+        <td>${game.rating}</td>
+    `;
+    tableBody.appendChild(row);
+});
