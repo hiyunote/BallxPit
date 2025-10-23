@@ -1,33 +1,40 @@
 body {
+    background-color: #1a1a1a;
+    color: #ffffff;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-}
-
-h2 {
-    color: #4a90e2;
-    border-bottom: 2px solid #ccc;
-    margin-top: 20px;
-}
-
-ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-li {
-    margin-bottom: 15px;
+h1 {
+    text-align: center;
+    background-color: #333;
     padding: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 0;
+    color: #ffffff; /* 改為白色 */
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.synthesized {
-    background-color: #90ee90; /* 綠色表示已合成 */
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.block {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    min-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.block-a { order: 1; }
+.block-b { order: 2; }
+.block-b2 { order: 3; }
+.result { order: 4; }
